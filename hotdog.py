@@ -1,20 +1,17 @@
 import streamlit as st
 import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.applications import MobileNetV2, VGG16, InceptionV3, Xception, ResNet50
 from PIL import Image
-import os
 
 
-image_1 = 'https://static.wikia.nocookie.net/silicon-valley/images/4/49/Jian_Yang.jpg'
-image_2 = 'http://www.semantics3.com/blog/content/images/downloaded_images/hot-dog-and-a-not-hot-dog-the-distinction-matters-code-included-8550067fb16/1-VrpXE1hE4rO1roK0laOd7g.png'
-image_3 = './assets/silicon_valley.jpg'
-image_4 = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd0abE3OlR-F7Su6Hrv8q_Wf-3J4ZGzY2KzQ&usqp=CAU'
-url_1 = 'https://www.youtube.com/watch?v=ACmydtFDTGs'
+# image_1 = 'https://static.wikia.nocookie.net/silicon-valley/images/4/49/Jian_Yang.jpg'
+# image_2 = 'http://www.semantics3.com/blog/content/images/downloaded_images/hot-dog-and-a-not-hot-dog-the-distinction-matters-code-included-8550067fb16/1-VrpXE1hE4rO1roK0laOd7g.png'
+# image_3 = './assets/silicon_valley.jpg'
+# image_4 = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd0abE3OlR-F7Su6Hrv8q_Wf-3J4ZGzY2KzQ&usqp=CAU'
+# url_1 = 'https://www.youtube.com/watch?v=ACmydtFDTGs'
 hnh = './assets/hnh.png'
 
 st.title("Hotdog, Not-Hotdog")
