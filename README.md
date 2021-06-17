@@ -1,6 +1,6 @@
 # Hotdog Not Hotdog
 
-__[Link to the App coming soon!](https://github.com/ccaldarella99/hotdog_not_hotdog)__
+__[Try out the App!](https://share.streamlit.io/ccaldarella99/hotdog_not_hotdog/main/hotdog.py)__
 
 <a href="https://www.youtube.com/watch?v=ACmydtFDTGs" target="blank"><img src='./assets/silicon_valley.jpg' /></a>
 
