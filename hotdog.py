@@ -24,7 +24,24 @@ sensitivity = col2.slider('Sensitivity (0 = all hotdogs, 100 = no hotdogs)', 0, 
 uploaded_file = col2.file_uploader("Upload an image...", type="jpg")
 
 if uploaded_file is not None:
-    image = Image.open(uploaded_file)
+#     image = Image.open(uploaded_file)
+    im = Image.open(uploaded_file)
+    # resize image
+    im_width, im_height = im.size
+    left, top, right, bottom = 0, 0, im_width, im_height
+    if(im_width > im_height):
+        diff = im_width - im_height
+        diff = diff // 2
+        left = diff
+        right = im_height + diff
+    elif(im_width < im_height):
+        diff = im_height - im_width
+        diff = diff // 2
+        top = diff
+        bottom = im_width + diff
+    im = im.crop((left, top, right, bottom))
+    newsize = (299, 299)
+    image = im.resize(newsize)
 
     with st.spinner(text="  \nClassifying..."):
         # initialize Transfer-Learning Model
